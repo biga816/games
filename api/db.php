@@ -12,7 +12,6 @@ $db_name = Config::get('app.db_name');
 $link = mysql_connect($server, $username, $password);
 if (!$link) {
     die('接続失敗です。'.mysql_error());
-
 }
 // dbを指定する
 $db_selected = mysql_select_db($db_name, $link);
